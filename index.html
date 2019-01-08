@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Document</title>
+<style type="text/css" >
+#tableResult
+{
+	font-family:"Microsoft YaHei", Arial, Helvetica, sans-serif;
+	width:100%;
+	border-collapse:collapse;
+}
+#tableResult td, #tableResult th 
+{
+	font-size:1em;
+	border:1px solid #98bf21;
+	padding:3px 7px 2px 7px;
+}
+#tableResult th 
+{
+	font-size:1.1em;
+	text-align:left;
+	padding-top:5px;
+	padding-bottom:4px;
+	background-color:#A7C942;
+	color:#ffffff;
+}
+#tableResult tr.alt td 
+{
+	color:#000000;
+	background-color:#EAF2D3;
+}
+</style>
+</head>
+<body>
+<form name="frmMain" method="get" target="_self" onsubmit="return false;">
+<table width="750" id="tableInput">
+<tr>
+	<td>起始技能等级和百分比</td>
+	<td><select name="txtFromRank"><option value="1">1<option value="2">2<option value="3">3<option value="4">4<option value="5">5<option value="6">6<option value="7">7<option value="8">8<option value="9">9<option value="10">10<option value="11">11<option value="12">12<option value="13">13<option value="14">14<option value="15">15<option value="16">16<option value="17">17<option value="18">18<option value="19">19<option value="20">20<option value="21">21<option value="22">22<option value="23">23<option value="24">24<option value="25">25<option value="26">26<option value="27">27<option value="28">28<option value="29">29<option value="30">30<option value="31">31<option value="32">32<option value="33">33<option value="34">34<option value="35">35<option value="36">36<option value="37">37<option value="38">38<option value="39">39<option value="40">40<option value="41">41<option value="42">42<option value="43">43<option value="44">44<option value="45">45<option value="46">46<option value="47">47<option value="48">48<option value="49">49<option value="50">50<option value="51">51<option value="52">52<option value="53">53<option value="54">54<option value="55">55<option value="56">56<option value="57">57<option value="58">58<option value="59">59<option value="60">60<option value="61">61<option value="62">62<option value="63">63<option value="64">64<option value="65">65<option value="66">66<option value="67">67<option value="68">68<option value="69">69<option value="70">70<option value="71">71<option value="72">72<option value="73">73<option value="74">74<option value="75">75<option value="76">76<option value="77">77<option value="78">78<option value="79">79<option value="80">80<option value="81">81<option value="82">82<option value="83">83<option value="84">84<option value="85">85<option value="86">86<option value="87">87<option value="88">88<option value="89" selected>89<option value="90">90<option value="91">91<option value="92">92<option value="93">93<option value="94">94<option value="95">95<option value="96">96<option value="97">97<option value="98">98<option value="99">99</select></td>
+	<td><select name="txtFromRankRate"><option value="0" selected>0<option value="1">1<option value="2">2<option value="3">3<option value="4">4<option value="5">5<option value="6">6<option value="7">7<option value="8">8<option value="9">9<option value="10">10<option value="11">11<option value="12">12<option value="13">13<option value="14">14<option value="15">15<option value="16">16<option value="17">17<option value="18">18<option value="19">19<option value="20">20<option value="21">21<option value="22">22<option value="23">23<option value="24">24<option value="25">25<option value="26">26<option value="27">27<option value="28">28<option value="29">29<option value="30">30<option value="31">31<option value="32">32<option value="33">33<option value="34">34<option value="35">35<option value="36">36<option value="37">37<option value="38">38<option value="39">39<option value="40">40<option value="41">41<option value="42">42<option value="43">43<option value="44">44<option value="45">45<option value="46">46<option value="47">47<option value="48">48<option value="49">49<option value="50">50<option value="51">51<option value="52">52<option value="53">53<option value="54">54<option value="55">55<option value="56">56<option value="57">57<option value="58">58<option value="59">59<option value="60">60<option value="61">61<option value="62">62<option value="63">63<option value="64">64<option value="65">65<option value="66">66<option value="67">67<option value="68">68<option value="69">69<option value="70">70<option value="71">71<option value="72">72<option value="73">73<option value="74">74<option value="75">75<option value="76">76<option value="77">77<option value="78">78<option value="79">79<option value="80">80<option value="81">81<option value="82">82<option value="83">83<option value="84">84<option value="85">85<option value="86">86<option value="87">87<option value="88">88<option value="89">89<option value="90">90<option value="91">91<option value="92">92<option value="93">93</select>%</td>
+	<td>(1-99, 0%-93%)</td>
+	<td><input type="datetime-local" min="1950-01-01T00:00:00" max="2049-12-31T23:59:59" value="2018-12-18T07:45:00" id="dtFrom" /></td>
+	<td>起始记录时间</td>
+</tr>
+<tr>
+	<td>结束技能百分比</td>
+	<td></td>
+	<td><select name="txtToRankRate"><option value="0">0<option value="1">1<option value="2">2<option value="3">3<option value="4">4<option value="5">5<option value="6">6<option value="7">7<option value="8">8<option value="9">9<option value="10">10<option value="11">11<option value="12">12<option value="13">13<option value="14">14<option value="15">15<option value="16">16<option value="17">17<option value="18">18<option value="19">19<option value="20">20<option value="21">21<option value="22">22<option value="23">23<option value="24">24<option value="25">25<option value="26">26<option value="27">27<option value="28">28<option value="29">29<option value="30">30<option value="31">31<option value="32">32<option value="33">33<option value="34">34<option value="35">35<option value="36">36<option value="37">37<option value="38">38<option value="39">39<option value="40">40<option value="41">41<option value="42">42<option value="43">43<option value="44">44<option value="45">45<option value="46">46<option value="47">47<option value="48">48<option value="49">49<option value="50">50<option value="51">51<option value="52">52<option value="53">53<option value="54">54<option value="55">55<option value="56">56<option value="57">57<option value="58">58<option value="59">59<option value="60" selected>60<option value="61">61<option value="62">62<option value="63">63<option value="64">64<option value="65">65<option value="66">66<option value="67">67<option value="68">68<option value="69">69<option value="70">70<option value="71">71<option value="72">72<option value="73">73<option value="74">74<option value="75">75<option value="76">76<option value="77">77<option value="78">78<option value="79">79<option value="80">80<option value="81">81<option value="82">82<option value="83">83<option value="84">84<option value="85">85<option value="86">86<option value="87">87<option value="88">88<option value="89">89<option value="90">90<option value="91">91<option value="92">92<option value="93">93<option value="94">94</select>%</td>
+	<td>(1%-94%)</td>
+	<td><input type="datetime-local" min="1950-01-01T00:00:00" max="2049-12-31T23:59:59" value="2019-01-07T07:30:00" id="dtTo" /></td>
+	<td>结束记录时间</td>
+</tr>
+<tr>
+	<td>目标技能</td>
+	<td><select name="txtTargetRank"><option value="2">2<option value="3">3<option value="4">4<option value="5">5<option value="6">6<option value="7">7<option value="8">8<option value="9">9<option value="10">10<option value="11">11<option value="12">12<option value="13">13<option value="14">14<option value="15">15<option value="16">16<option value="17">17<option value="18">18<option value="19">19<option value="20">20<option value="21">21<option value="22">22<option value="23">23<option value="24">24<option value="25">25<option value="26">26<option value="27">27<option value="28">28<option value="29">29<option value="30">30<option value="31">31<option value="32">32<option value="33">33<option value="34">34<option value="35">35<option value="36">36<option value="37">37<option value="38">38<option value="39">39<option value="40">40<option value="41">41<option value="42">42<option value="43">43<option value="44">44<option value="45">45<option value="46">46<option value="47">47<option value="48">48<option value="49">49<option value="50">50<option value="51">51<option value="52">52<option value="53">53<option value="54">54<option value="55">55<option value="56">56<option value="57">57<option value="58">58<option value="59">59<option value="60">60<option value="61">61<option value="62">62<option value="63">63<option value="64">64<option value="65">65<option value="66">66<option value="67">67<option value="68">68<option value="69">69<option value="70">70<option value="71">71<option value="72">72<option value="73">73<option value="74">74<option value="75">75<option value="76">76<option value="77">77<option value="78">78<option value="79">79<option value="80">80<option value="81">81<option value="82">82<option value="83">83<option value="84">84<option value="85">85<option value="86">86<option value="87">87<option value="88">88<option value="89">89<option value="90">90<option value="91">91<option value="92">92<option value="93">93<option value="94">94<option value="95">95<option value="96" selected>96<option value="97">97<option value="98">98<option value="99">99<option value="100">100</select></td>
+	<td colspan="2">(2-100)</td>
+</tr>
+<tr>
+	<td><input type="hidden" name="txtRate" value="1.07142835"/></td>
+	<td></td>
+	<td colspan="2"><button onclick="calc();return false;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;预测&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button></td>
+</tr>
+<tr>
+	<td colspan="4">予測結果：<div id="divResult"></div></td>
+	<td colspan="2"><textarea name="" rows="10" cols="30">by furier/wiz(帅哥飛)
+予測SK
+离山剑宗(fff)
+帅哥飛(fff)
+离山剑宗，剑出离山！
+ver 0.1</textarea></td>
+</tr>
+</table>
+</form>
+<script type="text/javascript">
+<!--
+	function calc() {
+		var rate         = document.frmMain.txtRate.value;
+		var fromRank     = document.frmMain.txtFromRank.value;
+		var fromRankRate = document.frmMain.txtFromRankRate.value;
+		var toRankRate   = document.frmMain.txtToRankRate.value;
+		var targetRank   = document.frmMain.txtTargetRank.value;
+		var dtFrom       = new Date(document.frmMain.dtFrom.value);
+		var dtTo         = new Date(document.frmMain.dtTo.value);
+
+		// a=to-from's minutes count for full from rank.
+		// b=rate.
+		// c=target rank.
+		// d=from rank.
+		// result=a*((1-b^(c-d+1))/(1-b)-1)
+
+		// '=a*((1-b^(c-d+1))/(1-b)-1)
+		// by furierwiz(帅哥飛)
+		// =$F701*((1-$G$5^(E708-$E701+1))/(1-$G$5)-1)
+		// =$F701*((1-$G$5^(E708-$E701+1))/(1-$G$5)-1)
+
+		//		min	=(strt-endt)*24*60
+		//		p_day	=0.93/(strp-endp)*min
+		//		days	=p_day*((1-1.07^(target_sk-now_sk+1))/(1-1.07)-1)
+
+		var diffTime = (dtTo - dtFrom) / 60000; // to minutes count.
+		var diffRate = toRankRate - fromRankRate;
+		var a = diffTime * (93 / diffRate); // to full rank value
+		var b = rate;
+		var c = targetRank;
+		var d = parseInt(fromRank, 10);
+
+		// by furierwiz(帅哥飛)
+		var i = 0;
+		var sb = "<table id='tableResult' width='450'><tr><th><b>sk</b></th><th><b>date</b></th><th><b>days</b></th></tr>";
+		sb += "<tr><td>" + d + "</td><td>" + formatDt(dtFrom) + "</td><td></td></tr>";
+		for (i=d+1;i<=100;i++){
+			// '=a*((1-b^(c-d+1))/(1-b)-1)
+			var needTime = a*((1.0-Math.pow(b, i-d+1))/(1.0-b)-1.0)-diffTime;
+			var dtNext = new Date(dtFrom.getTime() + needTime * 60000);
+			var str = formatDt(dtNext);
+			var days = needTime / 1440;
+
+			sb += formatHtml(i==targetRank,i%2==1,3,i,str,days);
+		}
+		sb += "</table>";
+
+		document.getElementById("divResult").innerHTML = sb;
+
+		//var sb = "";
+		//for (i=fromRank;i<=100;i++){
+		//	// '=a*((1-b^(c-d+1))/(1-b)-1)
+		//	var needTime = a*((1.0-Math.pow(b, i-d+1))/(1.0-b)-1.0)-diffTime;
+		//	var dtNext = new Date(dtFrom.getTime() + needTime * 60000);
+		//	var str = formatDt(dtNext);
+		//	sb += "\nsk=" + i + " [" + str + "]";
+		//}
+		//
+		//document.frmMain.txtResult.innerText = "予測結果=" + sb;
+	}
+
+	function formatDt(dt) {
+		var y = dt.getFullYear();
+		var M = dt.getMonth() + 1;
+		var d = dt.getDate();
+ 		var h = dt.getHours();
+		var m = dt.getMinutes();
+
+		if(M<10)M="0"+M;
+		if(d<10)d="0"+d;
+		if(h<10)h="0"+h;
+		if(m<10)m="0"+m;
+
+		return y + "/" + M + "/" + d + " " + h + ":" + m;
+	}
+
+	function formatHtml(flg,jo,cols,a1,a2,a3,a4,a5,a6) {
+		var sb = jo?"<tr class='alt'>":"<tr>";
+		sb += getCell(flg, a1);
+		if(cols>1){
+			sb += getCell(flg, a2);
+		}
+		if(cols>2){
+			sb += getCell(flg, a3);
+		}
+		if(cols>3){
+			sb += getCell(flg, a4);
+		}
+		if(cols>4){
+			sb += getCell(flg, a5);
+		}
+		if(cols>5){
+			sb += getCell(flg, a6);
+		}
+		sb += "</tr>";
+		return sb;
+	}
+
+	function getCell(flg,str) {
+		return "<td>"+getBold(flg,str)+"</td>";
+	}
+
+	function getBold(flg,str) {
+		return flg?"<b>"+str+"</b>":str;
+	}
+	
+//-->
+</script>
+</body>
+</html>
